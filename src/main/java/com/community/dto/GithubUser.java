@@ -1,4 +1,4 @@
-package com.majiang.community.community.dto;
+package com.community.dto;
 
 public class GithubUser {
     private String name;

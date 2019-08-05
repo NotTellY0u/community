@@ -1,8 +1,8 @@
-package com.majiang.community.community.controller;
+package com.community.controller;
 
-import com.majiang.community.community.dto.AccessTokenDTO;
-import com.majiang.community.community.dto.GithubUser;
-import com.majiang.community.community.provider.GithubProvider;
+import com.community.dto.AccessTokenDTO;
+import com.community.dto.GithubUser;
+import com.community.provider.GithubProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
