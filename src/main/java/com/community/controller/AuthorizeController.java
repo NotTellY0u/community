@@ -2,6 +2,7 @@ package com.community.controller;
 
 import com.community.dto.AccessTokenDTO;
 import com.community.dto.GithubUser;
+import com.community.mapper.UserMapper;
 import com.community.provider.GithubProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,6 +24,8 @@ public class AuthorizeController {
     @Value("${github.redirect.uri}")
     private String redirectUri;
 
+    @Autowired
+    private UserMapper userMapper;
 
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code") String code,
