@@ -13,7 +13,7 @@
 [`Git`](https://git-scm.com/download)   
 [`Visual Paradigm`](https://www.visual-paradigm.com)
 
-##脚本
+##脚本     
 `sql`    
 CREATE CACHED TABLE PUBLIC.USER(    
     ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL ,
