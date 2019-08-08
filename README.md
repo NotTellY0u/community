@@ -17,27 +17,30 @@
 
 ##脚本     
 `sql`    
-CREATE  TABLE PUBLIC.USER(    
-    ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL ,
-    ACCOUNT_ID VARCHAR(100),   
-    NAME VARCHAR(50),   
-    TOKEN CHAR(36),   
-    GMT_CREATE BIGINT,   
-    GMT_MODIFIED BIGINT  
-)    
-CREATE TABLE QUESTION
-(   
-	ID INTEGER DEFAULT AUTO_INCREMENT,    
-	TITLE VARCHAR(50),    
-	DESCRIPTION CLOB,    
-	GMT_CREATE BIGINT,    
-	GMT_MODIFIED BIGINT,    
-	CREATOR INTEGER,    
-	COMMENT_COUNT INTEGER DEFAULT 0,    
-	VIEW_COUNT INTEGER DEFAULT 0,    
-	LIKE_COUNT INTEGER DEFAULT 0,     
-	TAG VARCHAR(256),      
-	CONSTRAINT QUESTION_PK     
-	PRIMARY KEY (ID)     
-)    
-
+create table USER(    
+    ID           INTEGER default (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_43B21BC3_8C23_400D_87A0_336B9D3FF25C) auto_increment,       
+    ACCOUNT_ID   VARCHAR(100),    
+    NAME         VARCHAR(50) not null,      
+    TOKEN        CHAR(36),    
+    GMT_CREATE   BIGINT,    
+    GMT_MODIFIED BIGINT,    
+    BIO          VARCHAR(256),    
+    AVATAR_URL   VARCHAR(100),      
+    constraint USER_PK    
+        primary key (ID)     
+);        
+create table QUESTION       
+(       
+    ID            INTEGER default (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_49268BC3_414B_499D_9EEA_EC7AAC870169) auto_increment,         
+    TITLE         VARCHAR(50),      
+    DESCRIPTION   CLOB,    
+    GMT_CREATE    BIGINT,      
+    GMT_MODIFIED  BIGINT,      
+    CREATOR       INTEGER,       
+    COMMENT_COUNT INTEGER default 0,     
+    VIEW_COUNT    INTEGER default 0,    
+    LIKE_COUNT    INTEGER default 0,      
+    TAG           VARCHAR(256),      
+    constraint QUESTION_PK    
+        primary key (ID)      
+);     
