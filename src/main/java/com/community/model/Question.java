@@ -6,7 +6,7 @@ public class Question {
     private String description;
     private String tag;
     private Long gmtCreate;
-    private long gmtModified;
+    private Long gmtModified;
     private Integer creator;
     private Integer viewCount;
     private Integer commentCount;
@@ -56,7 +56,7 @@ public class Question {
         return gmtModified;
     }
 
-    public void setGmtModified(long gmtModified) {
+    public void setGmtModified(Long gmtModified) {
         this.gmtModified = gmtModified;
     }
 
