@@ -82,12 +82,12 @@
                 <ul class="pagination">
 
                     <li th:if="${pagination.showFirstPage}">
-                        <a href="/?page=1"  aria-label="Previous">
+                        <a href="/?page=1" aria-label="Previous">
                             <span aria-hidden="true">&lt;&lt;</span>
                         </a>
                     </li>
                     <li th:if="${pagination.showPrevious}">
-                        <a  th:href="@{/(page=${pagination.page - 1})}" aria-label="Previous">
+                        <a th:href="@{/(page=${pagination.page - 1})}" aria-label="Previous">
                             <span aria-hidden="true">&lt;</span>
                         </a>
                     </li>

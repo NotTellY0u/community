@@ -1,7 +1,6 @@
 package com.community.controller;
 
 import com.community.dto.PaginationDTO;
-import com.community.dto.QuestionDTO;
 import com.community.mapper.UserMapper;
 import com.community.model.User;
 import com.community.service.QuestionService;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 @Controller
 public class IndexController {
@@ -42,7 +40,7 @@ public class IndexController {
                 }
             }
         }
-        PaginationDTO pagination = questionService.list(page,size);
+        PaginationDTO pagination = questionService.list(page, size);
         model.addAttribute("pagination", pagination);
         return "index";
     }
