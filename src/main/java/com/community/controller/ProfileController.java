@@ -10,8 +10,8 @@ public class ProfileController {
     @GetMapping("/profile/{action}")
     public String profile(@PathVariable(name = "action") String action,
                           Model model) {
-        if ("question".equals(action)) {
-            model.addAttribute("section", "question");
+        if ("questions".equals(action)) {
+            model.addAttribute("section", "questions");
             model.addAttribute("sectionName", "我的提问");
 
         } else if ("replies".equals(action)) {
