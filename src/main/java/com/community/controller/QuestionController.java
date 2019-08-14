@@ -2,9 +2,7 @@ package com.community.controller;
 
 
 import com.community.dto.QuestionDTO;
-import com.community.mapper.QuestionMapper;
 import com.community.service.QuestionService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,7 +17,7 @@ public class QuestionController {
 
     @GetMapping("/question/{id}")
     public String question(@PathVariable(name = "id") Integer id,
-                           Model model){
+                           Model model) {
         QuestionDTO questionDTO = questionService.getById(id);
         model.addAttribute("question", questionDTO);
         return "question";
