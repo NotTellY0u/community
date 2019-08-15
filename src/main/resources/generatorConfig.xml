@@ -29,11 +29,8 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table schema="DB2ADMIN" tableName="user" domainObjectName="User" >
+        <table tableName="user" domainObjectName="User" >
             <property name="useActualColumnNames" value="false"/>
-            <columnOverride column="DATE_FIELD" property="startDate" />
-            <ignoreColumn column="FRED" />
-            <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />
         </table>
 
     </context>

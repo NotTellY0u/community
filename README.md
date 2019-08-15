@@ -44,3 +44,6 @@ create table QUESTION
     constraint QUESTION_PK    
         primary key (ID)      
 );     
+
+[`mvn`]     
+mvn -Dmybatis.generator.overwrite=ture mybatis-generator:generate
