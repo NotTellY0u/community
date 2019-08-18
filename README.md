@@ -47,3 +47,4 @@ create table QUESTION
 
 [`mvn`]     
 mvn -Dmybatis.generator.overwrite=ture mybatis-generator:generate
+123
