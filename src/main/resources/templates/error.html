@@ -11,14 +11,11 @@
 </head>
 <body>
 <div th:insert="~{navigation::nav}"></div>
-<div class="container-fluid main">
-    <div class="row">
         <div class="jumbotron">
             <h1>出错了！</h1>
+            <!--/*@thymesVar id="message" type=""*/-->
             <p th:text="${message}">出错了！！！！！</p>
             <p><a class="btn btn-primary btn-lg" href="/" role="button">回到主页</a> </p>
         </div>
-    </div>
-</div>
 </body>
 </html>
