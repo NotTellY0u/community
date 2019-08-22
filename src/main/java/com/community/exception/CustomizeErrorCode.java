@@ -4,7 +4,8 @@ public enum  CustomizeErrorCode implements ICustomizeErrorCode{
 
     QUESTION_NOT_FOUND(2001,"\"你找的问题被小僻菇吃掉了\""),
     TARGET_PARAM_NOT_FOUND(2002,"\"未选中任何问题或评论进行回复\""),
-    NO_LOGIN(2003,"\"请登录后再进行当前操作\"");
+    NO_LOGIN(2003,"\"请登录后再进行当前操作\""),
+    SYS_ERROR(2004,"\"服务器出错了\"");
 
     @Override
     public String getMessage() {

@@ -24,6 +24,7 @@ public class CommentController {
 
     @Autowired
     private CommentService commentService;
+
     @ResponseBody
     @RequestMapping(value = "/comment", method = RequestMethod.POST)
     public Object post(@RequestBody CommentDTO commentDTO,
@@ -40,9 +41,10 @@ public class CommentController {
         comment.setType(commentDTO.getType());
         comment.setGmtModified(System.currentTimeMillis());
         comment.setGmtCreate(System.currentTimeMillis());
-        comment.setCommentator(1);
+        comment.setCommentator(user.getId());
+        comment.setLikeCount(0L);
         commentService.insert(comment);
-        return null;
+        return ResultDTO.okOf();
 
 
     }

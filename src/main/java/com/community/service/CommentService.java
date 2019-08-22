@@ -3,7 +3,9 @@ package com.community.service;
 import com.community.exception.CustomizeErrorCode;
 import com.community.exception.CustomizeException;
 import com.community.model.Comment;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CommentService {
 
     public void insert(Comment comment) {
