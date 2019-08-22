@@ -21,15 +21,15 @@ public class CustomizeExceptionHandler {
     ModelAndView handle(Throwable e,
                         Model model,
                         HttpServletRequest request,
-                  HttpServletResponse response) {
+                        HttpServletResponse response) {
 
         String contentType = request.getContentType();
         if ("application/json".equals(contentType)) {
             ResultDTO resultDTO;
             //返回JSon
-            if(e instanceof CustomizeException) {
+            if (e instanceof CustomizeException) {
                 resultDTO = ResultDTO.errorOf((CustomizeException) e);
-            }else {
+            } else {
                 resultDTO = ResultDTO.errorOf(CustomizeErrorCode.SYS_ERROR);
             }
             try {
@@ -42,8 +42,8 @@ public class CustomizeExceptionHandler {
             } catch (IOException ioe) {
 
             }
-                return null;
-        }else {
+            return null;
+        } else {
             //错误页面跳转
             if (e instanceof CustomizeException) {
                 model.addAttribute("message", e.getMessage());
