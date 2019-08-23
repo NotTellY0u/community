@@ -44,6 +44,7 @@ public class CommentService {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
             commentMapper.insert(comment);
+            question.setCommentCount(1);
             questionExtMapper.inCommentCount(question);
         }
     }
