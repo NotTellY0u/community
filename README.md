@@ -16,7 +16,7 @@
 [`lombok`](https://www.projectlombok.org)          
 [`Postman`](https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)    
 
-##脚本     
+##脚本                
 `sql`       
 create table COMMENT       
 (      
