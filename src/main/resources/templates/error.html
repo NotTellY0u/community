@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>个人社区</title>
+    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/community.css">
+</head>
+<body>
+<div th:insert="~{navigation::nav}"></div>
+        <div class="jumbotron">
+            <h1>出错了！</h1>
+            <!--/*@thymesVar id="message" type=""*/-->
+            <p th:text="${message}">出错了！！！！！</p>
+            <p><a class="btn btn-primary btn-lg" href="/" role="button">回到主页</a> </p>
+        </div>
+</body>
+</html>
