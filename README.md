@@ -45,5 +45,5 @@ create table QUESTION
         primary key (ID)      
 );     
 
-[`mvn`]     
+[`mvn`]      
 mvn -Dmybatis.generator.overwrite=ture mybatis-generator:generate
