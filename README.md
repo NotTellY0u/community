@@ -16,7 +16,7 @@
 [`lombok`](https://www.projectlombok.org)          
 [`Postman`](https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)    
 
-##脚本                
+##脚本                  
 `sql`       
 create table COMMENT       
 (      
@@ -44,7 +44,7 @@ create table QUESTION
     TAG           VARCHAR(256),      
         primary key (ID)        
 );     
-create table USER       
+create table USER         
 (        
     ID           BIGINT default auto_increment,       
     ACCOUNT_ID   VARCHAR(100),         
