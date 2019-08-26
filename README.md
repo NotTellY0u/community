@@ -44,7 +44,7 @@ create table QUESTION
     TAG           VARCHAR(256),      
         primary key (ID)        
 );     
-create table USER         
+create table USER          
 (        
     ID           BIGINT default auto_increment,       
     ACCOUNT_ID   VARCHAR(100),         
