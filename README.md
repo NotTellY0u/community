@@ -39,7 +39,7 @@ create table QUESTION
     GMT_MODIFIED  BIGINT,      
     CREATOR       BIGINT,        
     COMMENT_COUNT INTEGER default 0,       
-    VIEW_COUNT    INTEGER default 0,       
+    VIEW_COUNT    INTEGER default 0,          
     LIKE_COUNT    INTEGER default 0,      
     TAG           VARCHAR(256),      
         primary key (ID)        
@@ -47,15 +47,15 @@ create table QUESTION
 create table USER              
 (        
     ID           BIGINT default auto_increment,       
-    ACCOUNT_ID   VARCHAR(100),         
-    NAME         VARCHAR(50) not null,                 
+    ACCOUNT_ID   VARCHAR(100),           
+    NAME         VARCHAR(50) not null,                    
     TOKEN        CHAR(36),                       
-    GMT_CREATE   BIGINT,                          
+    GMT_CREATE   BIGINT,                             
     GMT_MODIFIED BIGINT,                          
-    BIO          VARCHAR(256),                         
+    BIO          VARCHAR(256),                            
     AVATAR_URL   VARCHAR(100),                            
-        primary key (ID)                  
-);                
+        primary key (ID)                     
+);                   
 
 
 
