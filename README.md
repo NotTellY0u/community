@@ -35,7 +35,7 @@ create table QUESTION
     ID            BIGINT  default auto_increment,     
     TITLE         VARCHAR(50),    
     DESCRIPTION   CLOB,      
-    GMT_CREATE    BIGINT,       
+    GMT_CREATE    BIGINT,          
     GMT_MODIFIED  BIGINT,      
     CREATOR       BIGINT,        
     COMMENT_COUNT INTEGER default 0,       
@@ -43,8 +43,8 @@ create table QUESTION
     LIKE_COUNT    INTEGER default 0,      
     TAG           VARCHAR(256),      
         primary key (ID)        
-);     
-create table USER          
+);          
+create table USER              
 (        
     ID           BIGINT default auto_increment,       
     ACCOUNT_ID   VARCHAR(100),         
