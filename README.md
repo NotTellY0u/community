@@ -61,3 +61,5 @@ create table USER
 
 [`mvn`]     
 mvn -Dmybatis.generator.overwrite=ture mybatis-generator:generate
+
+
