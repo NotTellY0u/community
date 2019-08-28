@@ -32,20 +32,20 @@ create table COMMENT
 )      
 create table QUESTION   
 (     
-    ID            BIGINT  default auto_increment,     
-    TITLE         VARCHAR(50),    
-    DESCRIPTION   CLOB,      
-    GMT_CREATE    BIGINT,          
-    GMT_MODIFIED  BIGINT,      
+    ID            BIGINT  default auto_increment,       
+    TITLE         VARCHAR(50),     
+    DESCRIPTION   CLOB,       
+    GMT_CREATE    BIGINT,           
+    GMT_MODIFIED  BIGINT,       
     CREATOR       BIGINT,        
-    COMMENT_COUNT INTEGER default 0,       
+    COMMENT_COUNT INTEGER default 0,        
     VIEW_COUNT    INTEGER default 0,          
-    LIKE_COUNT    INTEGER default 0,      
+    LIKE_COUNT    INTEGER default 0,        
     TAG           VARCHAR(256),      
         primary key (ID)        
-);          
-create table USER              
-(        
+);            
+create table USER                
+(            
     ID           BIGINT default auto_increment,       
     ACCOUNT_ID   VARCHAR(100),           
     NAME         VARCHAR(50) not null,                    
