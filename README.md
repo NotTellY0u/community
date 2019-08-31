@@ -38,7 +38,7 @@ create table QUESTION
     GMT_CREATE    BIGINT,           
     GMT_MODIFIED  BIGINT,        
     CREATOR       BIGINT,        
-    COMMENT_COUNT INTEGER default 0,        
+    COMMENT_COUNT INTEGER default 0,      
     VIEW_COUNT    INTEGER default 0,          
     LIKE_COUNT    INTEGER default 0,        
     TAG           VARCHAR(256),      
