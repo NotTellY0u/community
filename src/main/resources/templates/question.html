@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <script src="/bootstrap-3.3.7-dist/js/jquery-3.4.1.min.js"></script>
     <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="/bootstrap-3.3.7-dist/js/community.js" type="application/javascript"></script>
     <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/community.css">
 </head>
 <body>
@@ -48,8 +49,9 @@
                         </h5>
                     </div>
                 </div>
+                <input type="hidden" id="question_id" th:value="${question.id}">
                 <textarea class="form-control comment" rows="6"></textarea>
-                <button type="button" class="btn btn-success btn-comment">回复</button>
+                <button type="button" class="btn btn-success btn-comment" onclick="post()">回复</button>
             </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
