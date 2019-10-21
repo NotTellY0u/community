@@ -50,8 +50,11 @@ public class CommentService {
                 throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
             }
             commentMapper.insert(comment);
-            comment.setCommentCount(1);
-            commentExtMapper.incCommentCount(comment);
+            //增加评论数
+            Comment parentComment = new Comment();
+            parentComment.setId(comment.getParentId());
+            parentComment.setCommentCount(1);
+            commentExtMapper.incCommentCount(parentComment);
         } else {
             //回复问题
             Question question = questionMapper.selectByPrimaryKey(comment.getParentId());

@@ -17,7 +17,7 @@
         <result column="CONTENT" jdbcType="VARCHAR" property="content"/>
         <result column="COMMENT_COUNT" jdbcType="INTEGER" property="commentCount"/>
     </resultMap>
-    <update id="incView" parameterType="com.community.model.Comment">
+    <update id="incCommentCount" parameterType="com.community.model.Comment">
     update COMMENT
     set
     COMMENT_COUNT =COMMENT_COUNT + #{commentCount,jdbcType=INTEGER}

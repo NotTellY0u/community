@@ -5,7 +5,6 @@ import com.community.dto.CommentDTO;
 import com.community.dto.ResultDTO;
 import com.community.enums.CommentTypeEnum;
 import com.community.exception.CustomizeErrorCode;
-import com.community.mapper.CommentExtMapper;
 import com.community.mapper.CommentMapper;
 import com.community.model.Comment;
 import com.community.model.User;
