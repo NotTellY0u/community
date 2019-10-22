@@ -61,8 +61,11 @@ create table USER
 
 [`mvn`]     
 mvn -Dmybatis.generator.overwrite=ture mybatis-generator:generate
-
-
+[`mvn自动建表`] 
+mvn flyway:init （初始化Flyway metadata ）
+mvn flyway:migrate （执行Flyway 升级操作）
+mvn flyway:validate （校验Flyway 数据正确性）
+mvn flyway:repair（修复脚本的checksum值）
 
 
 
