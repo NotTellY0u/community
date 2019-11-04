@@ -181,6 +181,24 @@
                     </div>
                 </div>
             </div>
+
+            <!--     微信号       -->
+            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>将就看看吧</h4>
+                <img class="img-thumbnail question-wechat" src="/bootstrap-3.3.7-dist/img/wechat.png">
+            </div>
+
+            <!--     相关问题       -->
+            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>相关问题</h4>
+                <ul class="question-related">
+                    <li th:each="related : ${relatedQuestions}">
+                        <a th:href="@{'/question/'+${related.id}}" th:text="${related.title}"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
